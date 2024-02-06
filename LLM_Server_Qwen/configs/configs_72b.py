@@ -4,17 +4,17 @@ import os
 
 FASTAPI_TITLE = 'LLM_Server_Qwen'
 FASTAPI_HOST = '0.0.0.0'
-FASTAPI_PORT = 24621
+FASTAPI_PORT = 24623
 
 MODEL_REGISTER_URL = 'http://paimongpt_server:24601/ai/model/register'
-THIS_SERVER_HOST = 'http://paimongpt_qwen_7b_server:' + str(FASTAPI_PORT)
+THIS_SERVER_HOST = 'http://paimongpt_qwen_72b_server:' + str(FASTAPI_PORT)
 
 LOG_DIR = 'logs'
 os.makedirs(LOG_DIR, exist_ok=True)
 
 MODEL_CONFIG = {
     "model_name": "Qwen1.5_72B",
-    "model_name_or_path": "/workspace/Models/",
+    "model_name_or_path": "/workspace/Models/Qwen1.5-72B-Chat",
     "device": "cuda"
 }
 

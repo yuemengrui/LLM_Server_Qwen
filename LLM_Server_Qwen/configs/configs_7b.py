@@ -14,7 +14,7 @@ os.makedirs(LOG_DIR, exist_ok=True)
 
 MODEL_CONFIG = {
     "model_name": "Qwen1.5_7B",
-    "model_name_or_path": "/workspace/Models/",
+    "model_name_or_path": "/workspace/Models/Qwen1.5-7B-Chat",
     "device": "cuda"
 }
 
